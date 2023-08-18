@@ -1,5 +1,20 @@
 import styled from 'styled-components';
 
+const getBackgroundColor = props => {
+  switch (props.id) {
+    case 'id-1':
+      return '#4fc4f8';
+    case 'id-2':
+      return '#a53cf4';
+    case 'id-3':
+      return '#e74c66';
+    case 'id-4':
+      return '#20b8c5';
+    default:
+      return null;
+  }
+};
+
 export const Statistic = styled.section`
   background-color: #efefef;
   padding: 40px;
@@ -8,7 +23,7 @@ export const Statistic = styled.section`
 export const Wrapper = styled.div`
   display: block;
   margin: 0 auto;
-  width: 330px;
+  width: 370px;
   height: 170px;
   background-color: #ffffff;
 `;
@@ -35,20 +50,7 @@ export const StatItem = styled.li`
   flex-direction: column;
   gap: 12px;
   flex-basis: calc(100% / 4);
-  background-color: ${props => {
-    switch (props.id) {
-      case 'id-1':
-        return '#4fc4f8';
-      case 'id-2':
-        return '#a53cf4';
-      case 'id-3':
-        return '#e74c66';
-      case 'id-4':
-        return '#20b8c5';
-      default:
-        return null;
-    }
-  }};
+  background-color: ${getBackgroundColor};
   color: #d7ffff;
   text-align: center;
   padding-top: 12px;
