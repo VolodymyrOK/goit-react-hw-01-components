@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 export const Profile = styled.div`
   display: block;
-  width: 249px;
+  width: 270px;
   height: 348px;
   margin: 80px auto 60px;
   background-color: ${props => props.theme.colors.profileFonColor};
   box-shadow: 0px 0px 23px 8px rgba(202, 213, 227, 1);
   -webkit-box-shadow: 0px 0px 23px 8px rgba(202, 213, 227, 1);
   -moz-box-shadow: 0px 0px 23px 8px rgba(202, 213, 227, 1);
-  border-radius: 4px;
+  border-radius: 8px;
   border: 1px solid #e4e9f0;
 `;
 
@@ -49,7 +49,7 @@ export const StatsItem = styled.li`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 6px;
   background-color: ${props => props.theme.colors.profileFonStats};
   border: 1px solid #e4e9f0;
   border-bottom-right-radius: 4px;

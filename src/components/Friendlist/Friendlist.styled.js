@@ -16,12 +16,13 @@ export const FriendItem = styled.li`
   align-items: center;
   justify-content: start;
   padding: 18px;
-  width: 400px;
-  height: 115px;
+  width: 380px;
+  height: 100px;
   background-color: ${props => props.theme.colors.friendMainFonColor};
   box-shadow: 5px 6px 12px 0px rgba(165, 165, 165, 1);
   -webkit-box-shadow: 5px 6px 12px 0px rgba(165, 165, 165, 1);
   -moz-box-shadow: 5px 6px 12px 0px rgba(165, 165, 165, 1);
+  border-radius: 8px;
 `;
 
 export const Status = styled.span`
@@ -32,14 +33,14 @@ export const Status = styled.span`
 `;
 
 export const Avatar = styled.img`
-  width: 98px;
-  height: 98px;
+  width: 84px;
+  height: 84px;
   background-color: #cbc8b9;
   border-radius: 10px;
 `;
 
 export const Name = styled.p`
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 500;
   color: ${props => props.theme.colors.friendTextColor};
 `;

@@ -24,6 +24,7 @@ export const Wrapper = styled.div`
   width: 330px;
   height: 176px;
   background-color: ${props => props.theme.colors.statMainFonColor};
+  border-radius: 4px;
 `;
 
 export const Title = styled.h2`
