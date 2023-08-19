@@ -7,16 +7,21 @@ import {
   Label,
   Percentage,
 } from './Statistics.styled';
+
+import { LiaStarOfLifeSolid } from 'react-icons/lia';
+
 export const Statistics = ({ stats }) => {
   return (
     <Statistic>
       <Wrapper>
         <Title>Upload stats</Title>
-
         <StatList>
           {stats.map(({ id, label, percentage }) => (
             <StatItem id={id} key={id}>
-              <Label>{label}</Label>
+              <Label>
+                <LiaStarOfLifeSolid />
+                {label}
+              </Label>
               <Percentage>{percentage}%</Percentage>
             </StatItem>
           ))}

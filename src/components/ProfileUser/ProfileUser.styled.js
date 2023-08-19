@@ -1,53 +1,46 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
-  background-color: #efefef;
-  padding: 80px;
-`;
 export const Profile = styled.div`
   display: block;
-  width: 330px;
-  height: 418px;
-  margin: 0 auto;
-  border: 1px solid #ebebf5;
-  background-color: #ffffff;
+  width: 249px;
+  height: 348px;
+  margin: 80px auto 60px;
+  background-color: ${props => props.theme.colors.profileFonColor};
+  box-shadow: 0px 0px 23px 8px rgba(202, 213, 227, 1);
+  -webkit-box-shadow: 0px 0px 23px 8px rgba(202, 213, 227, 1);
+  -moz-box-shadow: 0px 0px 23px 8px rgba(202, 213, 227, 1);
+  border-radius: 4px;
+  border: 1px solid #e4e9f0;
 `;
+
 export const Description = styled.div`
-  padding-top: 30px;
+  margin-top: 30px;
 `;
 
 export const Avatar = styled.img`
-  margin: 0;
-  padding: 0;
-  display: block;
   margin: 0 auto;
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  background-color: grey;
+  background-color: #a88770;
 `;
 export const Name = styled.h2`
-  margin: 0;
-  padding: 0;
-  margin-top: 32px;
+  margin-top: 30px;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 20px;
   text-align: center;
-  color: #444444;
+  color: ${props => props.theme.colors.profileTitleColor};
 `;
 export const TagAndLocation = styled.p`
-  margin: 0;
-  padding: 0;
-  margin-top: 16px;
+  margin-top: 12px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
-  color: #aaaaaa;
+  color: ${props => props.theme.colors.profileTextColor};
 `;
 export const Stats = styled.ul`
-  margin: 0;
-  padding: 0;
-  margin-top: 24px;
+  margin-top: 30px;
+  height: 73px;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -56,21 +49,22 @@ export const StatsItem = styled.li`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  background-color: #f7f7fa;
-  border: 1px solid #ebebf5;
+  gap: 7px;
+  background-color: ${props => props.theme.colors.profileFonStats};
+  border: 1px solid #e4e9f0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 `;
 export const Label = styled.span`
-  margin-top: 20px;
+  margin-top: 18px;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 12px;
   text-align: center;
-  color: #aaaaaa;
+  color: ${props => props.theme.colors.profileTextColor};
 `;
 export const Quantity = styled.span`
-  margin-bottom: 20px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
-  color: #444444;
+  ${props => props.theme.colors.profileTitleColor};
 `;

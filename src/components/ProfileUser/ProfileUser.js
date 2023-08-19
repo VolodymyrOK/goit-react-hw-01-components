@@ -1,5 +1,4 @@
 import {
-  Wrapper,
   Profile,
   Description,
   Avatar,
@@ -19,30 +18,28 @@ export const ProfileUser = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <Wrapper>
-      <Profile>
-        <Description>
-          <Avatar src={avatar} alt="User avatar" />
-          <Name>{username}</Name>
-          <TagAndLocation>{tag}</TagAndLocation>
-          <TagAndLocation>{location}</TagAndLocation>
-        </Description>
+    <Profile>
+      <Description>
+        <Avatar src={avatar} alt="User avatar" />
+        <Name>{username}</Name>
+        <TagAndLocation>{tag}</TagAndLocation>
+        <TagAndLocation>{location}</TagAndLocation>
+      </Description>
 
-        <Stats>
-          <StatsItem>
-            <Label>Followers</Label>
-            <Quantity>{followers}</Quantity>
-          </StatsItem>
-          <StatsItem>
-            <Label>Views</Label>
-            <Quantity>{views}</Quantity>
-          </StatsItem>
-          <StatsItem>
-            <Label>Likes</Label>
-            <Quantity>{likes}</Quantity>
-          </StatsItem>
-        </Stats>
-      </Profile>
-    </Wrapper>
+      <Stats>
+        <StatsItem>
+          <Label>Followers</Label>
+          <Quantity>{followers}</Quantity>
+        </StatsItem>
+        <StatsItem>
+          <Label>Views</Label>
+          <Quantity>{views}</Quantity>
+        </StatsItem>
+        <StatsItem>
+          <Label>Likes</Label>
+          <Quantity>{likes}</Quantity>
+        </StatsItem>
+      </Stats>
+    </Profile>
   );
 };
