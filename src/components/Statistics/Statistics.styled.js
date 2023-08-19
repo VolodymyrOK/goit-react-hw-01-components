@@ -21,19 +21,21 @@ export const Statistic = styled.section`
 
 export const Wrapper = styled.div`
   display: block;
-  width: 330px;
-  height: 176px;
+  width: 370px;
+  height: 169px;
   background-color: ${props => props.theme.colors.statMainFonColor};
   border-radius: 4px;
 `;
 
 export const Title = styled.h2`
-  padding-top: 30px;
+  padding-top: 32px;
   padding-bottom: 30px;
-  font-weight: 500;
-  font-size: 28px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1.02px;
   text-align: center;
   color: ${props => props.theme.colors.statTitleColor};
+  text-transform: uppercase;
 `;
 
 export const StatList = styled.ul`
@@ -44,13 +46,13 @@ export const StatList = styled.ul`
 export const StatItem = styled.li`
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   flex-basis: calc(100% / 4);
   background-color: ${getBackgroundColor};
   color: ${props => props.theme.colors.statTextColor};
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 `;
 export const Label = styled.span`
   display: flex;

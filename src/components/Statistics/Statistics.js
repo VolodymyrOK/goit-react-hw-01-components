@@ -10,11 +10,11 @@ import {
 
 import { LiaStarOfLifeSolid } from 'react-icons/lia';
 
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <Statistic>
       <Wrapper>
-        <Title>Upload stats</Title>
+        <Title>{title}</Title>
         <StatList>
           {stats.map(({ id, label, percentage }) => (
             <StatItem id={id} key={id}>
