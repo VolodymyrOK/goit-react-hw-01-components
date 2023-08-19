@@ -21,6 +21,12 @@ const theme = {
     friendOnlineTrue: '#6fa665',
     friendOnlineFalse: '#f05d55',
     friendTextColor: '#010101',
+    tableMainFonColor: '#ffffff',
+    tableTitleTextColor: '#ffffff',
+    tableTextColor: '#899098',
+    tableHead: '#00bcd5',
+    tableLine1: '#ffffff',
+    tableLine2: '#ecf1f4',
   },
 };
 
