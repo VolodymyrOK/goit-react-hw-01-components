@@ -6,5 +6,5 @@ export const Layout = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  background-color: ${props => props.theme.colors.commonFonColor};
+  background-color: ${({ theme: { colors } }) => colors.commonFonColor};
 `;

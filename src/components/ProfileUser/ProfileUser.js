@@ -9,6 +9,7 @@ import {
   Label,
   Quantity,
 } from './ProfileUser.styled';
+import PropTypes from 'prop-types';
 
 export const ProfileUser = ({
   username,
@@ -42,4 +43,12 @@ export const ProfileUser = ({
       </Stats>
     </Profile>
   );
+};
+
+ProfileUser.propTypes = {
+  username: PropTypes.string.isRequired,
+  avatar: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  stats: PropTypes.object,
 };
