@@ -17,7 +17,7 @@ export const Statistics = ({ title, stats }) => {
         <Title>{title}</Title>
         <StatList>
           {stats.map(({ id, label, percentage }) => (
-            <StatItem id={id} key={id}>
+            <StatItem $color={id} key={id}>
               <Label>
                 <LiaStarOfLifeSolid />
                 {label}

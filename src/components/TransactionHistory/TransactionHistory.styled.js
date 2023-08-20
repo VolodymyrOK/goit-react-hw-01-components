@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const bgcolorLine = ({ idx, theme: { colors } }) => {
-  const numberLine = idx % 2;
+const bgcolorLine = ({ $idx, theme: { colors } }) => {
+  const numberLine = $idx % 2;
   return numberLine ? colors.tableLine2 : colors.tableLine1;
 };
 

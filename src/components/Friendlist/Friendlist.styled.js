@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-export const getStatusColor = ({ isOnline, theme: { colors } }) =>
-  isOnline ? colors.friendOnlineTrue : colors.friendOnlineFalse;
+export const getStatusColor = ({ $isOnline, theme: { colors } }) =>
+  $isOnline ? colors.friendOnlineTrue : colors.friendOnlineFalse;
 
 export const FriendList = styled.ul`
   margin: 60px auto;
@@ -33,8 +33,8 @@ export const Status = styled.span`
 `;
 
 export const Avatar = styled.img`
-  width: 84px;
-  height: 84px;
+  width: 76px;
+  height: 76px;
   background-color: #cbc8b9;
   border-radius: 10px;
 `;

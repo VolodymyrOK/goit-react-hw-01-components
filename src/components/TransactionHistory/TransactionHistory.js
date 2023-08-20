@@ -18,7 +18,7 @@ export const TransactionHistory = ({ items }) => {
       </Thead>
       <tbody>
         {items.map(({ id, type, amount, currency }, idx) => (
-          <TbodyTr idx={idx} key={id}>
+          <TbodyTr $idx={idx} key={id}>
             <TdType>{type}</TdType>
             <td>{amount}</td>
             <td>{currency}</td>

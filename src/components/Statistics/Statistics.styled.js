@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
 const getBackgroundColor = props => {
-  switch (props.id) {
+  switch (props.$color) {
     case 'id-1':
-      return props => props.theme.colors.statFonDocx;
+      return ({ theme: { colors } }) => colors.statFonDocx;
     case 'id-2':
-      return props => props.theme.colors.statFonPdf;
+      return ({ theme: { colors } }) => colors.statFonPdf;
     case 'id-3':
-      return props => props.theme.colors.statFonMp3;
+      return ({ theme: { colors } }) => colors.statFonMp3;
     case 'id-4':
-      return props => props.theme.colors.statFonPsd;
+      return ({ theme: { colors } }) => colors.statFonPsd;
     default:
       return null;
   }
@@ -23,7 +23,7 @@ export const Wrapper = styled.div`
   display: block;
   width: 370px;
   height: 169px;
-  background-color: ${props => props.theme.colors.statMainFonColor};
+  background-color: ${({ theme: { colors } }) => colors.statMainFonColor};
   border-radius: 4px;
 `;
 
@@ -34,7 +34,7 @@ export const Title = styled.h2`
   font-size: 20px;
   letter-spacing: 1.02px;
   text-align: center;
-  color: ${props => props.theme.colors.statTitleColor};
+  color: ${({ theme: { colors } }) => colors.statTitleColor};
   text-transform: uppercase;
 `;
 
@@ -49,7 +49,7 @@ export const StatItem = styled.li`
   gap: 8px;
   flex-basis: calc(100% / 4);
   background-color: ${getBackgroundColor};
-  color: ${props => props.theme.colors.statTextColor};
+  color: ${({ theme: { colors } }) => colors.statTextColor};
   text-align: center;
   padding-top: 14px;
   padding-bottom: 14px;
