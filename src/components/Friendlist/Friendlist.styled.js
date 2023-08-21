@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
-export const getStatusColor = ({ $isOnline, theme: { colors } }) =>
-  $isOnline ? colors.friendOnlineTrue : colors.friendOnlineFalse;
+const getStatusColor = ({ $isOnline, theme: { colors } }) =>
+  // $isOnline ? colors.friendOnlineTrue : colors.friendOnlineFalse;
+  ($isOnline && colors.friendOnlineTrue) || colors.friendOnlineFalse;
 
 export const FriendList = styled.ul`
   margin: 60px auto;
