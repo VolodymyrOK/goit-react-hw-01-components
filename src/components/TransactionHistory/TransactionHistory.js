@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   Table,
   Thead,
@@ -5,7 +6,6 @@ import {
   TbodyTr,
   TdType,
 } from './TransactionHistory.styled';
-import PropTypes from 'prop-types';
 
 export const TransactionHistory = ({ items }) => {
   return (

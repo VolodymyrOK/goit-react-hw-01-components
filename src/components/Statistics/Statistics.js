@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+import { LiaStarOfLifeSolid } from 'react-icons/lia';
 import {
   Statistic,
   Wrapper,
@@ -7,9 +9,7 @@ import {
   Label,
   Percentage,
 } from './Statistics.styled';
-import PropTypes from 'prop-types';
 
-import { LiaStarOfLifeSolid } from 'react-icons/lia';
 
 export const Statistics = ({ title, stats }) => {
   return (

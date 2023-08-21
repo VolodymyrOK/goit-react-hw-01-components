@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   Profile,
   Description,
@@ -9,7 +10,6 @@ import {
   Label,
   Quantity,
 } from './ProfileUser.styled';
-import PropTypes from 'prop-types';
 
 export const ProfileUser = ({
   username,
