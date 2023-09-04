@@ -2,7 +2,6 @@ import { ProfileUser } from './ProfileUser/ProfileUser';
 import { Statistics } from './Statistics/Statistics';
 import { Friendlist } from './Friendlist/Friendlist';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
-import PropTypes from 'prop-types';
 
 import user from '../data/user.json';
 import data from '../data/data.json';
@@ -27,24 +26,4 @@ export const App = () => {
       <GlobalStyle />
     </Layout>
   );
-};
-
-ProfileUser.propTypes = {
-  username: PropTypes.string.isRequired,
-  avatar: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  stats: PropTypes.object,
-};
-
-Statistics.propTypes = {
-  stats: PropTypes.array,
-};
-
-Friendlist.propTypes = {
-  friends: PropTypes.array,
-};
-
-TransactionHistory.propTypes = {
-  items: PropTypes.array,
 };

@@ -52,3 +52,4 @@ ProfileUser.propTypes = {
   location: PropTypes.string,
   stats: PropTypes.object,
 };
+
